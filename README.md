@@ -1,6 +1,31 @@
 # NgFrontendContainer
+Ng Frontend Docker Container
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.25.5.
+
+## Getting Started:
+
+`git clone https://github.com/bigbassroller/ng-frontend-container && cd ng-frontend-container`
+
+`npm install`
+
+`docker-compose build`
+
+`docker-compose up -d`
+
+[`http://localhost:4200`](http://localhost:4200/)
+
+## Monitor app:
+`docker logs ng-frontend-container -f`
+## Build your own Docker image:
+`docker build -t <username>/ng-frontend-container .`
+## Run image:
+`docker run -p 3000:3000 -d <username>/ng-frontend-container`
+## Run image with mounted volume:
+`docker run -p 3000:3000 -v  "$PWD"/:/usr/src/app --name ng-frontend-container -d <username>/ng-frontend-container`
+## Go into container shell:
+`docker exec -it ng-frontend-container bash`
+
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
