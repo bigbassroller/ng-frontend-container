@@ -18,9 +18,9 @@ Docker container with Angular2 CLI. This project was generated with [angular-cli
 ## Build your own Docker image:
 `docker build -t <username>/ng-frontend-container .`
 ## Run image:
-`docker run -p 3000:3000 -d <username>/ng-frontend-container`
+`docker run -p 4200:4200 -d <username>/ng-frontend-container`
 ## Run image with mounted volume:
-`docker run -p 3000:3000 -v  "$PWD"/:/usr/src/app --name ng-frontend-container -d <username>/ng-frontend-container`
+`docker run -p 4200:4200 -v  "$PWD"/:/usr/src/app --name ng-frontend-container -d <username>/ng-frontend-container`
 ## Go into container shell:
 `docker exec -it ng-frontend-container bash`
 
