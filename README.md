@@ -1,7 +1,5 @@
 # NgFrontendContainer
-Ng Frontend Docker Container
-
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.25.5.
+Docker container with Angular2 CLI. This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.25.5.
 
 ## Getting Started:
 
