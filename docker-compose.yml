@@ -1,0 +1,10 @@
+version: '2'
+services:
+  ng-frontend-container:
+    container_name: ng-frontend-container
+    image: bigbassroller/ng-frontend-container
+    build: .
+    ports:
+     - "4200:4200"
+    volumes:
+     - .:/usr/src/app
