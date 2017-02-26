@@ -11,6 +11,8 @@ import { PostsEditComponent } from './posts-edit/posts-edit.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { PublicComponent } from './public/public.component';
 import { PrivateComponent } from './private/private.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { PrivateComponent } from './private/private.component';
     PostsEditComponent,
     NotFoundComponent,
     PublicComponent,
-    PrivateComponent
+    PrivateComponent,
+    SignUpComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
