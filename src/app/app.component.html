@@ -1,10 +1,31 @@
-<nav>
-  <a routerLink="/public" routerLinkActive="active" md-raised-button>Public</a>
-  <a routerLink="/private" routerLinkActive="active" md-raised-button>Private</a>
-  <a routerLink="/sign-up" routerLinkActive="active" md-raised-button>Sign Up</a>
-  <a routerLink="/sign-in" routerLinkActive="active" md-raised-button>Sign In</a>
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+	 <div class="container">
+	 	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	 		<span class="navbar-toggler-icon"></span>
+	 	</button>
+
+	 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	 		<ul class="navbar-nav mr-auto">
+	 			<li class="nav-item">
+	 				<a class="nav-link" routerLink="/public" routerLinkActive="active" md-raised-button>Public</a>
+	 			</li>
+	 			<li class="nav-item">
+	 				<a class="nav-link" routerLink="/private" routerLinkActive="active" md-raised-button>Private</a>
+	 			</li>
+	 			<li class="nav-item">
+	 				<a class="nav-link" routerLink="/sign-up" routerLinkActive="active" md-raised-button>Sign Up</a>
+	 			</li>
+	 		</ul>
+	 		<ul class="navbar-nav ml-auto">
+	 			<li class="my-2 my-lg-0">
+	 				<a class="nav-link" routerLink="/sign-in" routerLinkActive="active" md-raised-button>Sign In</a>
+	 			</li>
+	 		</ul>
+	 	</div>
+	 </div>
 </nav>
-<div class="alert alert-success" role="alert">
-  <strong>Well done!</strong> You successfully read this important alert message.
+<div class="container">
+	<div class="jumbotron">
+		<router-outlet></router-outlet>
+	</div>
 </div>
-<router-outlet></router-outlet>
